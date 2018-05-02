@@ -22,3 +22,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://167.99.33.74:8761/eureka/
+
+turbine:
+  stream:
+    port: 8988
