@@ -5,6 +5,7 @@ eureka:
     fetchRegistry: true
 
 turbine:
+  combineHostPort: true
   aggregator:
     clusterConfig: KRIS5
   ConfigPropertyBasedDiscovery:
