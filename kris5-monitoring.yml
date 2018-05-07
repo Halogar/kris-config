@@ -4,12 +4,3 @@ eureka:
       defaultZone: http://167.99.33.74:8761/eureka/
     fetchRegistry: true
 
-turbine:
-  instanceInsertPort: false
-  aggregator:
-    clusterConfig: KRIS5
-  instanceUrlSuffix:
-    KRIS5: :7000/application-service/hystrix.stream, :7010/item-service/hystrix.stream
-  ConfigPropertyBasedDiscover:
-    instances: 167.99.33.74, 174.138.7.84
-  appConfig: kris5-application-service, kris5-item-service
