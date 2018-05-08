@@ -2,6 +2,9 @@ server:
   context-path: /application-service
   port: 7000
 
+management:
+  context-path: /application-service
+
 spring:
   datasource:
       platform: POSTGRESQL
