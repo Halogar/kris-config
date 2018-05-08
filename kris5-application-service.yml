@@ -1,9 +1,6 @@
 server:
-  context-path: /application-service
+  context-path: /
   port: 7000
-
-management:
-  context-path: /application-service
 
 spring:
   datasource:
