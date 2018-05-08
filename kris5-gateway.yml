@@ -28,7 +28,7 @@ zuul:
 
   routes:
     kris5-application-service:
-      path: /**
+      path: /application-service/**
       serviceId: kris5-application-service
       stripPrefix: false
       timeout: 60000

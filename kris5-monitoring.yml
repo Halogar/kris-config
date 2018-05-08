@@ -21,7 +21,10 @@ eureka:
 
 turbine:
   appConfig: kris5-item-service, kris5-application-service
-  clusterNameExpression: "'default'"
+  aggregator:
+    clusterConfig: KRIS5-APPLICATION-SERVICE, KRIS5-ITEM-SERVICE
+  instanceUrlSuffix.KRIS5-APPLICATION-SERVICE: application-service/hystrix.stream
+  instanceUrlSuffix.KRIS5-ITEM-SERVICE: item-service/hystrix.stream
   InstanceMonitor:
     eventStream:
       skipLineLogic:
