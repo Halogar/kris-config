@@ -5,11 +5,17 @@ eureka:
     fetchRegistry: true
 
 turbine:
-  instanceInsertPort: false
+  instanceInsertPort:
+     default: false
   aggregator:
     clusterConfig: KRIS5
   instanceUrlSuffix:
     KRIS5: :7000/application-service/hystrix.stream, :7010/item-service/hystrix.stream
   ConfigPropertyBasedDiscover:
     instances: 167.99.33.74, 174.138.7.84
-  appConfig: kris5-application-service, kris5-item-service
+  appConfig: kris5-item-service, kris5-application-service
+  InstanceMonitor:
+    eventStream:
+      skipLineLogic:
+        enabled: false
+  combineHostPort: true
