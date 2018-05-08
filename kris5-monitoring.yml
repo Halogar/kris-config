@@ -21,6 +21,7 @@ eureka:
 
 turbine:
   appConfig: kris5-item-service, kris5-application-service
+  clusterNameExpression: "'default'"
   InstanceMonitor:
     eventStream:
       skipLineLogic:
