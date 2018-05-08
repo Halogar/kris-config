@@ -2,3 +2,5 @@ server:
   context-path: /xroad-service
   port: 7020
 
+xroad:
+  host: localhost
