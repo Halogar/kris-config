@@ -23,7 +23,7 @@ turbine:
   appConfig: kris5-item-service, kris5-application-service
   clusterNameExpression: "'default'"
   instanceUrlSuffix:
-    default: /application-service
+    default: application-service, item-service
   InstanceMonitor:
     eventStream:
       skipLineLogic:
