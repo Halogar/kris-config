@@ -23,8 +23,6 @@ hystrix:
 
 eureka:
   client:
-    management:
-      context-path: ${management.context-path}
     serviceUrl:
       defaultZone: http://167.99.33.74:8761/eureka/
 
