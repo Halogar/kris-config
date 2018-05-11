@@ -2,5 +2,10 @@ server:
   context-path: /xroad-service
   port: 7020
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://167.99.33.74:8761/eureka/
+  
 xroad:
   host: localhost
